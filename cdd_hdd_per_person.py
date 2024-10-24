@@ -24,7 +24,7 @@ units = {
 FIGDIR = 'figures'
 
 regional = True
-region_datadir = '../../isimip-df-agri/data'
+region_datadir = '../isimip-df-agri/data'
 cube_r10 = iris.load_cube(os.path.join(region_datadir, 'processed', 'utils', 'r10masks_fractional.nc'))
 cube_r10.coord('latitude').guess_bounds()
 cube_r10.coord('longitude').guess_bounds()
